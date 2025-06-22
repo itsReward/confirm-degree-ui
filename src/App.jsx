@@ -12,10 +12,8 @@ import SystemHealth from './components/admin/SystemHealth';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import ProtectedRoute from './components/auth/ProtectedRoute';
-// Instead of separate hook files, import directly from contexts
-import { useAuth } from '../contexts/AuthContext';
-import { useNotification } from '../contexts/NotificationContext';
 import './App.css';
+import {useAuth} from "./contexts/AuthContext";
 
 function App() {
   const { user, loading } = useAuth();

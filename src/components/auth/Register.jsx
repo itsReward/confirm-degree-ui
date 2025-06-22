@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { useNotification } from '../contexts/NotificationContext';
+import { useNotification } from 'src/contexts/NotificationContext';
 import { authService } from '../../services/authService';
 import Logo from '../common/Logo';
 import LoadingSpinner from '../common/LoadingSpinner';
