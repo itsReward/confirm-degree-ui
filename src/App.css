@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom component styles */
+.confirm-button {
+  @apply bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200;
+}
+
+.confirm-button:disabled {
+  @apply bg-gray-300 cursor-not-allowed;
+}
+
+.confirm-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500;
+}
+
+.confirm-card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+}
+
+.confirm-badge-verified {
+  @apply bg-green-100 text-green-800 border-green-200;
+}
+
+.confirm-badge-failed {
+  @apply bg-red-100 text-red-800 border-red-200;
+}
+
+.confirm-badge-pending {
+  @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+}
+
+/* File upload area */
+.file-upload-area {
+  @apply border-2 border-gray-300 border-dashed rounded-md hover:border-green-400 transition-colors;
+}
+
+.file-upload-area.dragover {
+  @apply border-green-500 bg-green-50;
+}
+
+/* Navigation active state */
+.nav-item-active {
+  @apply text-green-600 bg-green-50;
+}
+
+.nav-item {
+  @apply text-gray-500 hover:text-gray-700 hover:bg-gray-50;
+}
