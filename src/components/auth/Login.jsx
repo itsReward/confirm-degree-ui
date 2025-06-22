@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { useAuth } from 'src/contexts/AuthContext';
-import { useNotification } from 'src/contexts/NotificationContext';
+import { useAuth } from '../../contexts/AuthContext';
+import { useNotification } from '../../contexts/NotificationContext';
 import Logo from '../common/Logo';
 import LoadingSpinner from '../common/LoadingSpinner';
 
