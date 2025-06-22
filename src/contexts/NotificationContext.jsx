@@ -1,8 +1,10 @@
 import React, { createContext, useContext } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
-const NotificationContext = createContext();
+// Export the context so it can be imported by separate hook files
+export const NotificationContext = createContext();
 
+// Keep the hook here as well for direct import
 export const useNotification = () => {
   const context = useContext(NotificationContext);
   if (!context) {
@@ -57,9 +59,9 @@ export const NotificationProvider = ({ children }) => {
   };
 
   return (
-    <NotificationContext.Provider value={value}>
-      {children}
-      <Toaster />
-    </NotificationContext.Provider>
+      <NotificationContext.Provider value={value}>
+        {children}
+        <Toaster />
+      </NotificationContext.Provider>
   );
 };

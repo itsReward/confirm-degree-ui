@@ -1,8 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { authService } from '../services/authService';
 
-const AuthContext = createContext();
+// Export the context so it can be imported by separate hook files
+export const AuthContext = createContext();
 
+// Keep the hook here as well for direct import
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {

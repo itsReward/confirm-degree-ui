@@ -12,7 +12,9 @@ import SystemHealth from './components/admin/SystemHealth';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import ProtectedRoute from './components/auth/ProtectedRoute';
-import { useAuth } from './hooks/useAuth';
+// Instead of separate hook files, import directly from contexts
+import { useAuth } from '../contexts/AuthContext';
+import { useNotification } from '../contexts/NotificationContext';
 import './App.css';
 
 function App() {
